@@ -84,25 +84,25 @@ The following visual figures document the technical workflow from initial datase
 ![Figure 2 Data Quality](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201159.png)
 
 ### Figure 3 — Analytics Workflow
-![Figure 3 Analytics Workflow](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201249.png)
+![Figure 3 Analytics Workflow](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201219.png)
 
 ### Figure 4 — Database Verification
-![Figure 4 Database Verification](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201258.png)
+![Figure 4 Database Verification](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201229.png)
 
 ### Figure 5 — Landing Page
-![Figure 5 Landing Page](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201304.png)
+![Figure 5 Landing Page](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201249.png)
 
 ### Figure 6 — Overview Dashboard
-![Figure 6 Overview Dashboard](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215452.png)
+![Figure 6 Overview Dashboard](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201258.png)
 
 ### Figure 7 — Content Analysis View
-![Figure 7 Content Analysis View](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215512.png)
+![Figure 7 Content Analysis View](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201304.png)
 
 ### Figure 8 — Geographic & Trend Breakdown
-![Figure 8 Geographic Breakdown](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215535.png)
+![Figure 8 Geographic Breakdown](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201311.png)
 
 ### Figure 9 — Advanced Analytics & Insights
-![Figure 9 Advanced Insights](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215600.png)
+![Figure 9 Advanced Insights](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215452.png)
 
 ---
 
@@ -111,7 +111,7 @@ The following visual figures document the technical workflow from initial datase
 - **Code/** — Python Jupyter Notebooks (Data Cleaning & ETL)
 - **Dashboard/** — Power BI (.pbix) Interactive Dashboard
 - **Data/** — Raw & Cleaned Dataset CSV Files
-- **Screenshots/** — Visual Evidence (Figures 1 to 9)
+- **Screenshots/** — Visual Evidence (Figures 1 to 9)[cite: 4]
 
 ---
 
