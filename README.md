@@ -127,3 +127,27 @@ Netflix_Data_Analysis_Project/
 ├── Dashboard/     <- Power BI (.pbix) Interactive Dashboard File
 ├── Data/          <- Raw & Cleaned CSV Datasets
 └── Screenshots/   <- Visual Documentation (Figures 1 to 9)
+
+
+---
+
+## ⚠️ Data Limitations
+
+- **Snapshot Scope:** Reflects catalog metadata at the time of extraction; does not contain real-time streaming hours or live subscriber viewership data.
+- **Metadata Constraints:** Financial metrics (licensing costs, budget per episode) and individual user retention logs were excluded from the public dataset.
+
+---
+
+## 🛠️ Tools & Skills Demonstrated
+
+- **Python & Data Engineering:** Pandas, Data Cleaning, Missing Value Imputation, Schema Validation
+- **Business Intelligence:** Power BI, Power Query, DAX Engine Design (`DISTINCTCOUNT`)
+- **Data Analytics:** Portfolio Breakdown, KPI Reconciliation, Regional Output Analysis
+- **Technical Writing:** Structured Documentation, Visual Evidence Mapping, Business Reporting
+
+---
+
+## 👤 Author
+
+**Mohamed Nabil**  
+*AI Student · Cybersecurity & Data Analytics Enthusiast*
