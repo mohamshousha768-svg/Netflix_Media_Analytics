@@ -127,7 +127,7 @@ Netflix_Data_Analysis_Project/
 ├── Dashboard/     <- Power BI (.pbix) Interactive Dashboard File
 ├── Data/          <- Raw & Cleaned CSV Datasets
 └── Screenshots/   <- Visual Documentation (Figures 1 to 9)
-
+```
 
 ---
 
