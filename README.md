@@ -54,13 +54,13 @@ This project addresses these challenges by delivering an accurate, audit-ready a
 ## 🔍 Selected Findings
 
 ### 1. Catalog Format Breakdown
-- **Movies:** 6,131 Titles (69.61% Share) — Quick Subscriber Acquisition
-- **TV Shows:** 2,676 Titles (30.39% Share) — Multi-episode Viewer Engagement
+- **Movies:** 6,131 Titles (69.61% Share) — Quick Subscriber Acquisition format.
+- **TV Shows:** 2,676 Titles (30.39% Share) — Multi-episode Viewer Engagement format.
 
 ### 2. Rating & Audience Distribution
-- **TV-MA / R (Mature Adults):** High Volume — Subscription Drive & Retention
-- **TV-14 / PG-13 (Teens & Families):** High Volume — Mainstream Engagement
-- **TV-Y / G (Kids & Children):** Moderate Volume — Long-term Family Retention
+- **TV-MA / R (Mature Adults):** High Volume — Subscription Drive & Retention.
+- **TV-14 / PG-13 (Teens & Families):** High Volume — Mainstream Engagement.
+- **TV-Y / G (Kids & Children):** Moderate Volume — Long-term Family Retention.
 
 ---
 
@@ -95,13 +95,44 @@ The following visual figures document the technical workflow from initial datase
 ### Figure 6 — Overview Dashboard
 ![Figure 6 Overview Dashboard](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215452.png)
 
+### Figure 7 — Content Analysis View
+![Figure 7 Content Analysis View](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215512.png)
+
+### Figure 8 — Geographic & Trend Breakdown
+![Figure 8 Geographic Breakdown](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215535.png)
+
+### Figure 9 — Advanced Analytics & Insights
+![Figure 9 Advanced Insights](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215600.png)
+
 ---
 
 ## 📁 Repository Structure
 
-```text
-Netflix_Data_Analysis_Project/
-├── Code/          <- Python Jupyter Notebooks (Data Cleaning & ETL)
-├── Dashboard/     <- Power BI (.pbix) Interactive Dashboard
-├── Data/          <- Raw & Cleaned Dataset CSV Files
-└── Screenshots/   <- Visual Evidence (Figures 1 to 6)
+- **Code/** — Python Jupyter Notebooks (Data Cleaning & ETL)
+- **Dashboard/** — Power BI (.pbix) Interactive Dashboard
+- **Data/** — Raw & Cleaned Dataset CSV Files
+- **Screenshots/** — Visual Evidence (Figures 1 to 9)
+
+---
+
+## ⚠️ Data Limitations
+
+- **Snapshot Dataset:** Reflects catalog availability up to its extraction date and does not record real-time viewership or streaming minutes.
+- **Public Metadata Constraints:** Financial budgets, content acquisition costs, and individual subscriber retention metrics were excluded from the public dataset.
+
+---
+
+## 🛠️ Tools and Skills Demonstrated
+
+- **Programming:** Python, Pandas, NumPy
+- **ETL & Data Cleansing:** Missing Value Treatment, String Normalization, Feature Engineering
+- **Business Intelligence & DAX:** Power BI, Power Query, Data Integrity DAX Engineering (`DISTINCTCOUNT`)
+- **Data Analytics:** Catalog Breakdown, Multi-country Slicing, KPI Reconciliation
+- **Strategic Communication:** Technical Documentation, Business Reporting, Strategic Action Plans
+
+---
+
+## 👤 Author
+
+**Mohamed Nabil**  
+*AI Student · Cybersecurity & Data Analytics Enthusiast*
