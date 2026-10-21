@@ -51,9 +51,66 @@ This project addresses these challenges by delivering an accurate, audit-ready a
 - Applied DAX measures to maintain metric accuracy during multi-value filtering:
   ```dax
   Total Titles = DISTINCTCOUNT(Netflix_Titles[show_id])
-🔍 Selected Findings1. Catalog Format BreakdownContent TypeTotal VolumePercentage ShareStrategic FunctionMovies6,13169.61%Quick Subscriber AcquisitionTV Shows2,67630.39%Multi-episode Viewer Engagement2. Rating & Audience DistributionRating ClassificationTarget DemographicCatalog ShareStrategic FocusTV-MA / RMature AdultsHighSubscription Drive & RetentionTV-14 / PG-13Teens & FamiliesHighMainstream EngagementTV-Y / GKids & ChildrenModerateLong-term Family Retention💡 Business RecommendationsValidate Reporting Metrics First: Enforce DISTINCTCOUNT logic in BI dashboards when working with unpivoted multi-country metadata to prevent reporting inflated counts to executive stakeholders.Optimize Content Acquisition Strategy: Balance high-volume Movie releases for quick subscriber attraction with long-form TV Show investments for sustained user engagement.Targeted Regional Investment: Focus content licensing budgets on high-growth regional hubs while monitoring cross-border co-production performance.Data Governance Standards: Standardize multi-value delimiter formatting (cast/country/director) at database entry points to streamline future ETL automation pipelines.🖥️ Dashboard ScreenshotsThe following visual figures document the technical workflow from initial dataset ingestion to the final interactive dashboard.Figure 1 — Dataset OverviewFigure 2 — Data QualityFigure 3 — Analytics WorkflowFigure 4 — Database VerificationFigure 5 — Landing PageFigure 6 — Overview Dashboard📁 Repository StructurePlaintextNetflix_Data_Analysis_Project/
+
+
+  Content Type,Total Volume,Percentage Share,Strategic Function
+Movies,"6,131",69.61%,Quick Subscriber Acquisition
+TV Shows,"2,676",30.39%,Multi-episode Viewer Engagement
+
+
+Rating Classification,Target Demographic,Catalog Share,Strategic Focus
+TV-MA / R,Mature Adults,High,Subscription Drive & Retention
+TV-14 / PG-13,Teens & Families,High,Mainstream Engagement
+TV-Y / G,Kids & Children,Moderate,Long-term Family Retention
+
+
+💡 Business Recommendations
+Validate Reporting Metrics First: Enforce DISTINCTCOUNT logic in BI dashboards when working with unpivoted multi-country metadata to prevent reporting inflated counts to executive stakeholders.
+
+Optimize Content Acquisition Strategy: Balance high-volume Movie releases for quick subscriber attraction with long-form TV Show investments for sustained user engagement.
+
+Targeted Regional Investment: Focus content licensing budgets on high-growth regional hubs while monitoring cross-border co-production performance.
+
+Data Governance Standards: Standardize multi-value delimiter formatting (cast/country/director) at database entry points to streamline future ETL automation pipelines.
+
+🖥️ Dashboard Screenshots
+The following visual figures document the technical workflow from initial dataset ingestion to the final interactive dashboard.
+
+Figure 1 — Dataset Overview
+Figure 2 — Data Quality
+Figure 3 — Analytics Workflow
+Figure 4 — Database Verification
+Figure 5 — Landing Page
+Figure 6 — Overview Dashboard
+
+
+📁 Repository Structure
+Netflix_Data_Analysis_Project/
 ├── Code/          <- Python Jupyter Notebooks (Data Cleaning & ETL)
 ├── Dashboard/     <- Power BI (.pbix) Interactive Dashboard
 ├── Data/          <- Raw & Cleaned Dataset CSV Files
 └── Screenshots/   <- Visual Evidence (Figures 1 to 6)
-⚠️ Data LimitationsSnapshot Dataset: Reflects catalog availability up to its extraction date and does not record real-time viewership or streaming minutes.Public Metadata Constraints: Financial budgets, content acquisition costs, and individual subscriber retention metrics were excluded from the public dataset.🛠️ Tools and Skills DemonstratedProgramming: Python, Pandas, NumPyETL & Data Cleansing: Missing Value Treatment, String Normalization, Feature EngineeringBusiness Intelligence & DAX: Power BI, Power Query, Data Integrity DAX Engineering (DISTINCTCOUNT)Data Analytics: Catalog Breakdown, Multi-country Slicing, KPI ReconciliationStrategic Communication: Technical Documentation, Business Reporting, Strategic Action Plans👤 AuthorMohamed NabilAI Student · Cybersecurity & Data Analytics Enthusiast
+
+
+⚠️ Data Limitations
+Snapshot Dataset: Reflects catalog availability up to its extraction date and does not record real-time viewership or streaming minutes.
+Public Metadata Constraints: Financial budgets, content acquisition costs, and individual subscriber retention metrics were excluded from the public dataset.
+
+
+
+🛠️ Tools and Skills Demonstrated
+Programming: Python, Pandas, NumPy
+
+ETL & Data Cleansing: Missing Value Treatment, String Normalization, Feature Engineering
+
+Business Intelligence & DAX: Power BI, Power Query, Data Integrity DAX Engineering (DISTINCTCOUNT)
+
+Data Analytics: Catalog Breakdown, Multi-country Slicing, KPI Reconciliation
+
+Strategic Communication: Technical Documentation, Business Reporting, Strategic Action Plans
+
+
+
+👤 Author
+Mohamed Nabil
+AI Student · Cybersecurity & Data Analytics Enthusiast
