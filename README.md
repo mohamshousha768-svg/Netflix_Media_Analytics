@@ -1,5 +1,7 @@
 # 🎬 Netflix Media & Content Analytics
 
+**Turning Raw Catalog Data into Actionable Streaming & Business Insights**
+
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Cleaning-150458?style=flat-square&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![Power BI](https://img.shields.io/badge/Power%20BI-Executive%20Dashboards-F2C811?style=flat-square&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
@@ -7,14 +9,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 **Prepared by:** Mohamed Nabil  
-**Project Type:** End-to-End Data Analytics Portfolio & Academic Assignment Project  
+**Project Type:** End-to-End Data Analytics Portfolio Project  
 
 ---
 
 ## 📌 Project Overview & The Business Problem
 
 ### 1. Project Context
-Streaming platforms manage massive, multi-faceted content catalogs. This project presents an exhaustive end-to-end data analytics study on **8,807 Netflix titles** (Movies and TV Shows). It covers the complete data lifecycle: raw data ingestion, automated Python-based ETL and data cleaning, Power Query schema transformation, relational database modeling, and an interactive Power BI executive dashboard designed to meet rigorous academic submission and professional presentation standards.
+Streaming platforms manage massive, multi-faceted content catalogs. This project presents an exhaustive end-to-end data analytics study on **8,807 Netflix titles** (Movies and TV Shows). It covers the complete data lifecycle: raw data ingestion, automated Python-based ETL and data cleaning, Power Query schema transformation, relational database modeling, and interactive Power BI executive dashboarding.
 
 ### 2. The Core Business Challenge
 Content catalogs frequently contain multi-value attributes (e.g., titles co-produced across multiple countries, shared casts, and multiple genre tags). Without strict data governance:
@@ -30,8 +32,8 @@ This project resolves these challenges by establishing an audit-ready analytics 
 | Metric | Result Value | Strategic Impact |
 | :--- | :--- | :--- |
 | **Total Catalog Records** | 8,807 Unique Titles | Locked aggregate baseline preventing record duplication |
-| **Total Movies Volume** | 6,131 (~69.62%) | Primary driver for rapid global subscriber acquisition |
-| **Total TV Shows Volume** | 2,676 (~30.38%) | Primary driver for long-form user engagement & retention |
+| **Total Movies Volume** | 6,131 (~69.6%) | Primary driver for rapid global subscriber acquisition |
+| **Total TV Shows Volume** | 2,676 (~30.4%) | Primary driver for long-form user engagement & retention |
 | **Peak Content Output Year** | 2018 | Historical high-water mark for global content licensing |
 | **Metric Reconciliation Logic** | `DISTINCTCOUNT(Netflix_Titles[show_id])` | DAX engine ensuring audit-ready KPI integrity |
 
@@ -94,33 +96,33 @@ Evaluating cleaned dataset rows to verify schema consistency, string formatting,
 
 ---
 
-## 📈 Phase 2: Power BI Executive Dashboard & Detailed Visual Breakdown
+## 📊 Phase 2: Power BI Executive Dashboard & Detailed Visual Breakdown
 
-The processed dataset feeds into a fully interactive Power BI executive dashboard equipped with global slicers (`release_year`, `country`) to allow dynamic stakeholder filtering. Below is the granular breakdown of every visual component integrated into the dashboard:
+The processed dataset feeds into an interactive Power BI executive dashboard equipped with global slicers (`release_year`, `country`) at the top right, enabling dynamic filtering across all catalog visuals. Below is the granular breakdown of every component shown in the dashboard interface:
 
-### 1. Executive KPI Scorecards (Top Banner)
-* **Total Titles (`8,808`):** Serves as the primary aggregate baseline for the entire catalog.
-* **Total Movies (`6,131` / `69.62%`):** Highlights the heavy volume of cinematic content dedicated to rapid user acquisition.
-* **Total TV Shows (`2,676` / `30.38%`):** Represents long-form episodic investments.
-* **Peak Year (`2018`):** Identifies the historical high-water mark for content licensing velocity prior to increased streaming competition.
+### 1. Executive KPI Scorecard Cards (Top Banner)
+- **Total Titles (`8,808`):** Displays the total catalog entry count serving as the primary baseline.
+- **Total Movies (`6,131` / `69.61%`):** Highlights the heavy volumetric dominance of cinematic releases.
+- **Total TV Shows (`2,676` / `30.39%`):** Represents episodic multi-season programming investments.
+- **Peak Year (`2018`):** Identifies the historical high-water mark for content additions.
 
-### 2. Production Growth Over Time (Line Chart)
-* **Purpose:** Plots historical content additions spanning from 1920 to 2020.
-* **Findings:** Illustrates a slow baseline growth for decades, followed by an exponential surge starting around 2014–2016 and peaking sharply in 2018 before stabilizing.
+### 2. Production Growth Over Time (Area / Line Chart - Top Left)
+- **Visual Description:** Plots historical content releases from 1920 to 2020, split by content type (`Movie` vs `TV Show`).
+- **Analytical Finding:** Demonstrates flat baseline production for decades, followed by an aggressive exponential surge starting around 2014 and peaking sharply in 2018.
 
-### 3. Content Distribution by Rating (Column Chart)
-* **Purpose:** Evaluates the catalog across target audience maturity demographics.
-* **Findings:** Reveals a massive concentration in mature (`TV-MA`, `R`) and teen/family (`TV-14`, `PG-13`) classifications, demonstrating a clear strategic focus on adult and young adult viewers.
+### 3. Content Distribution by Rating (Clustered Column Chart - Top Right)
+- **Visual Description:** Categorizes titles across audience maturity classifications (`TV-MA`, `TV-14`, `TV-PG`, `R`, `PG-13`, etc.).
+- **Analytical Finding:** Reveals a massive concentration in mature adult (`TV-MA`) and teen (`TV-14`) demographics.
 
-### 4. Top 10 Production Countries (Horizontal Bar Chart)
-* **Purpose:** Ranks the leading geographic production hubs.
-* **Findings:** The United States leads by a wide margin (~2,800+ titles), followed by India (~970+ titles), United Kingdom, Japan, South Korea, Canada, Spain, France, Mexico, and Egypt.
+### 4. Top 10 Production Countries (Horizontal Bar Chart - Bottom Left)
+- **Visual Description:** Ranks origin countries by total title count (`Count of show_id`).
+- **Analytical Finding:** Shows the United States leading significantly (~2,800+ titles) and India in second place (~970+ titles), followed by the UK, Japan, South Korea, Canada, Spain, France, Mexico, and Egypt.
 
-### 5. Content Mix - Movies vs. TV Shows (Donut Chart)
-* **Purpose:** Visually contrasts single-session media against episodic content.
-* **Findings:** Reinforces the strategic 70/30 equilibrium (~69.62% Movies vs. ~30.38% TV Shows).
+### 5. Content Mix - Movies vs TV Shows (Donut Chart - Bottom Right)
+- **Visual Description:** Illustrates the proportional ratio of Movies vs. TV Shows relative to total catalog volume (`8.807K`).
+- **Analytical Finding:** Confirms the strategic ~70/30 distribution (~69.62% Movies vs. ~30.38% TV Shows).
 
-- **Figure 9 — Executive Power BI Analytics Dashboard**  
+- **Figure 9 — Executive Power BI Analytics Dashboard (Full Interface View)**  
   ![Figure 9 Executive Dashboard](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215452.png)
 
 ---
@@ -142,6 +144,4 @@ Netflix_Data_Analysis_Project/
 ├── Dashboard/     <- Power BI (.pbix) Interactive Dashboard File
 ├── Data/          <- Raw & Cleaned CSV Datasets
 └── Screenshots/   <- Visual Documentation (Figures 1 to 9)
-```
-
 
