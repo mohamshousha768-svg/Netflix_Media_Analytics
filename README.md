@@ -96,19 +96,34 @@ Evaluating cleaned dataset rows to verify schema consistency, string formatting,
 
 ---
 
-## 📊 Phase 2: Power BI Executive Dashboard & Findings
+## 📊 Phase 2: Power BI Executive Dashboard & Detailed Visual Breakdown
 
-The processed dataset feeds into an interactive Power BI dashboard featuring dynamic slicers, KPI cards, production trend curves, audience rating distributions, and top production country rankings.
+The processed dataset feeds into an interactive Power BI executive dashboard equipped with global slicers (`release_year`, `country`) at the top right, enabling dynamic filtering across all catalog visuals. Below is the granular breakdown of every component shown in the dashboard interface:
 
-### Catalog Breakdown Findings
-- **Movies (69.61% Share):** Dominates total catalog volume; ideal for short-term viewing and rapid subscriber acquisition.
-- **TV Shows (30.39% Share):** Represents high-retention multi-season content investments for long-term engagement.
-- **Target Ratings:** High concentration in `TV-MA / R` and `TV-14 / PG-13`, aligning with mature and mainstream family demographic preferences.
+### 1. Executive KPI Scorecard Cards (Top Banner)
+- **Total Titles (`8,808`):** Displays the total catalog entry count serving as the primary baseline.
+- **Total Movies (`6,131` / `69.61%`):** Highlights the heavy volumetric dominance of cinematic releases.
+- **Total TV Shows (`2,676` / `30.39%`):** Represents episodic multi-season programming investments.
+- **Peak Year (`2018`):** Identifies the historical high-water mark for content additions.
 
-* **Figure 9 — Executive Power BI Analytics Dashboard**  
+### 2. Production Growth Over Time (Area / Line Chart - Top Left)
+- **Visual Description:** Plots historical content releases from 1920 to 2020, split by content type (`Movie` vs `TV Show`).
+- **Analytical Finding:** Demonstrates flat baseline production for decades, followed by an aggressive exponential surge starting around 2014 and peaking sharply in 2018.
+
+### 3. Content Distribution by Rating (Clustered Column Chart - Top Right)
+- **Visual Description:** Categorizes titles across audience maturity classifications (`TV-MA`, `TV-14`, `TV-PG`, `R`, `PG-13`, etc.).
+- **Analytical Finding:** Reveals a massive concentration in mature adult (`TV-MA`) and teen (`TV-14`) demographics.
+
+### 4. Top 10 Production Countries (Horizontal Bar Chart - Bottom Left)
+- **Visual Description:** Ranks origin countries by total title count (`Count of show_id`).
+- **Analytical Finding:** Shows the United States leading significantly (~2,800+ titles) and India in second place (~970+ titles), followed by the UK, Japan, South Korea, Canada, Spain, France, Mexico, and Egypt.
+
+### 5. Content Mix - Movies vs TV Shows (Donut Chart - Bottom Right)
+- **Visual Description:** Illustrates the proportional ratio of Movies vs. TV Shows relative to total catalog volume (`8.807K`).
+- **Analytical Finding:** Confirms the strategic ~70/30 distribution (~69.62% Movies vs. ~30.38% TV Shows).
+
+- **Figure 9 — Executive Power BI Analytics Dashboard (Full Interface View)**  
   ![Figure 9 Executive Dashboard](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215452.png)
-
----
 
 ## 💡 Strategic Business Recommendations
 
