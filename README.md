@@ -1,7 +1,5 @@
 # 🎬 Netflix Media & Content Analytics
 
-**Turning Raw Catalog Data into Actionable Streaming & Business Insights**
-
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Cleaning-150458?style=flat-square&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![Power BI](https://img.shields.io/badge/Power%20BI-Executive%20Dashboards-F2C811?style=flat-square&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
@@ -9,14 +7,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 **Prepared by:** Mohamed Nabil  
-**Project Type:** End-to-End Data Analytics Portfolio Project  
+**Project Type:** End-to-End Data Analytics Portfolio & Academic Assignment Project  
 
 ---
 
 ## 📌 Project Overview & The Business Problem
 
 ### 1. Project Context
-Streaming platforms manage massive, multi-faceted content catalogs. This project presents an exhaustive end-to-end data analytics study on **8,807 Netflix titles** (Movies and TV Shows). It covers the complete data lifecycle: raw data ingestion, automated Python-based ETL and data cleaning, Power Query schema transformation, relational database modeling, and interactive Power BI executive dashboarding.
+Streaming platforms manage massive, multi-faceted content catalogs. This project presents an exhaustive end-to-end data analytics study on **8,807 Netflix titles** (Movies and TV Shows). It covers the complete data lifecycle: raw data ingestion, automated Python-based ETL and data cleaning, Power Query schema transformation, relational database modeling, and an interactive Power BI executive dashboard designed to meet rigorous academic submission and professional presentation standards.
 
 ### 2. The Core Business Challenge
 Content catalogs frequently contain multi-value attributes (e.g., titles co-produced across multiple countries, shared casts, and multiple genre tags). Without strict data governance:
@@ -32,8 +30,8 @@ This project resolves these challenges by establishing an audit-ready analytics 
 | Metric | Result Value | Strategic Impact |
 | :--- | :--- | :--- |
 | **Total Catalog Records** | 8,807 Unique Titles | Locked aggregate baseline preventing record duplication |
-| **Total Movies Volume** | 6,131 (~69.6%) | Primary driver for rapid global subscriber acquisition |
-| **Total TV Shows Volume** | 2,676 (~30.4%) | Primary driver for long-form user engagement & retention |
+| **Total Movies Volume** | 6,131 (~69.62%) | Primary driver for rapid global subscriber acquisition |
+| **Total TV Shows Volume** | 2,676 (~30.38%) | Primary driver for long-form user engagement & retention |
 | **Peak Content Output Year** | 2018 | Historical high-water mark for global content licensing |
 | **Metric Reconciliation Logic** | `DISTINCTCOUNT(Netflix_Titles[show_id])` | DAX engine ensuring audit-ready KPI integrity |
 
@@ -60,10 +58,10 @@ The pipeline begins in Python, inspecting raw dataset schemas, handling missing 
 ### Step 1: Schema Inspection & Data Type Validation
 We inspect raw dataset schemas, verify column data types across all 12 attributes, and evaluate datetime parsing structures.
 
-* **Figure 1 — Dataset Schema & Data Type Inspection (`df.dtypes`)**  
+- **Figure 1 — Dataset Schema & Data Type Inspection (`df.dtypes`)**  
   ![Figure 1 Schema Inspection](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201024.png)
 
-* **Figure 2 — Dataset Descriptive Statistics (`df.describe()`)**  
+- **Figure 2 — Dataset Descriptive Statistics (`df.describe()`)**  
   ![Figure 2 Descriptive Statistics](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201159.png)
 
 ---
@@ -71,10 +69,10 @@ We inspect raw dataset schemas, verify column data types across all 12 attribute
 ### Step 2: Missing Value Audit & Data Cleansing
 Missing values across `Director`, `Cast`, and `Country` are identified and imputed with `'Unknown'` to prevent null propagation during visual slicing. String columns undergo whitespace trimming and standardization.
 
-* **Figure 3 — Null Value Audit & Categorical Imputation (`isnull().sum()`)**  
+- **Figure 3 — Null Value Audit & Categorical Imputation (`isnull().sum()`)**  
   ![Figure 3 Missing Value Audit](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201219.png)
 
-* **Figure 4 — Genre Frequency & Distribution Breakdown**  
+- **Figure 4 — Genre Frequency & Distribution Breakdown**  
   ![Figure 4 Genre Distribution](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201229.png)
 
 ---
@@ -82,30 +80,47 @@ Missing values across `Director`, `Cast`, and `Country` are identified and imput
 ### Step 3: Data Preview & Sample Inspection
 Evaluating cleaned dataset rows to verify schema consistency, string formatting, and date transformations prior to exporting into Power BI.
 
-* **Figure 5 — Date Parsing & Schema Type Verification**  
+- **Figure 5 — Date Parsing & Schema Type Verification**  
   ![Figure 5 Date Parsing Verification](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201249.png)
 
-* **Figure 6 — Cleaned Data Head Preview (`df.head()`)**  
+- **Figure 6 — Cleaned Data Head Preview (`df.head()`)**  
   ![Figure 6 Cleaned Data Preview](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201258.png)
 
-* **Figure 7 — Multi-Value Category Count Analysis**  
+- **Figure 7 — Multi-Value Category Count Analysis**  
   ![Figure 7 Category Count Analysis](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201304.png)
 
-* **Figure 8 — Primary Data Records Preview (`df.head(9)`)**  
+- **Figure 8 — Primary Data Records Preview (`df.head(9)`)**  
   ![Figure 8 Primary Data Preview](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201311.png)
 
 ---
 
-## 📊 Phase 2: Power BI Executive Dashboard & Findings
+## 📈 Phase 2: Power BI Executive Dashboard & Detailed Visual Breakdown
 
-The processed dataset feeds into an interactive Power BI dashboard featuring dynamic slicers, KPI cards, production trend curves, audience rating distributions, and top production country rankings.
+The processed dataset feeds into a fully interactive Power BI executive dashboard equipped with global slicers (`release_year`, `country`) to allow dynamic stakeholder filtering. Below is the granular breakdown of every visual component integrated into the dashboard:
 
-### Catalog Breakdown Findings
-- **Movies (69.61% Share):** Dominates total catalog volume; ideal for short-term viewing and rapid subscriber acquisition.
-- **TV Shows (30.39% Share):** Represents high-retention multi-season content investments for long-term engagement.
-- **Target Ratings:** High concentration in `TV-MA / R` and `TV-14 / PG-13`, aligning with mature and mainstream family demographic preferences.
+### 1. Executive KPI Scorecards (Top Banner)
+* **Total Titles (`8,808`):** Serves as the primary aggregate baseline for the entire catalog.
+* **Total Movies (`6,131` / `69.62%`):** Highlights the heavy volume of cinematic content dedicated to rapid user acquisition.
+* **Total TV Shows (`2,676` / `30.38%`):** Represents long-form episodic investments.
+* **Peak Year (`2018`):** Identifies the historical high-water mark for content licensing velocity prior to increased streaming competition.
 
-* **Figure 9 — Executive Power BI Analytics Dashboard**  
+### 2. Production Growth Over Time (Line Chart)
+* **Purpose:** Plots historical content additions spanning from 1920 to 2020.
+* **Findings:** Illustrates a slow baseline growth for decades, followed by an exponential surge starting around 2014–2016 and peaking sharply in 2018 before stabilizing.
+
+### 3. Content Distribution by Rating (Column Chart)
+* **Purpose:** Evaluates the catalog across target audience maturity demographics.
+* **Findings:** Reveals a massive concentration in mature (`TV-MA`, `R`) and teen/family (`TV-14`, `PG-13`) classifications, demonstrating a clear strategic focus on adult and young adult viewers.
+
+### 4. Top 10 Production Countries (Horizontal Bar Chart)
+* **Purpose:** Ranks the leading geographic production hubs.
+* **Findings:** The United States leads by a wide margin (~2,800+ titles), followed by India (~970+ titles), United Kingdom, Japan, South Korea, Canada, Spain, France, Mexico, and Egypt.
+
+### 5. Content Mix - Movies vs. TV Shows (Donut Chart)
+* **Purpose:** Visually contrasts single-session media against episodic content.
+* **Findings:** Reinforces the strategic 70/30 equilibrium (~69.62% Movies vs. ~30.38% TV Shows).
+
+- **Figure 9 — Executive Power BI Analytics Dashboard**  
   ![Figure 9 Executive Dashboard](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20215452.png)
 
 ---
@@ -129,25 +144,4 @@ Netflix_Data_Analysis_Project/
 └── Screenshots/   <- Visual Documentation (Figures 1 to 9)
 ```
 
----
 
-## ⚠️ Data Limitations
-
-- **Snapshot Scope:** Reflects catalog metadata at the time of extraction; does not contain real-time streaming hours or live subscriber viewership data.
-- **Metadata Constraints:** Financial metrics (licensing costs, budget per episode) and individual user retention logs were excluded from the public dataset.
-
----
-
-## 🛠️ Tools & Skills Demonstrated
-
-- **Python & Data Engineering:** Pandas, Data Cleaning, Missing Value Imputation, Schema Validation
-- **Business Intelligence:** Power BI, Power Query, DAX Engine Design (`DISTINCTCOUNT`)
-- **Data Analytics:** Portfolio Breakdown, KPI Reconciliation, Regional Output Analysis
-- **Technical Writing:** Structured Documentation, Visual Evidence Mapping, Business Reporting
-
----
-
-## 👤 Author
-
-**Mohamed Nabil**  
-*AI Student · Cybersecurity & Data Analytics Enthusiast*
