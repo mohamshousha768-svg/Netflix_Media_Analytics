@@ -71,10 +71,10 @@ We inspect raw dataset schemas, verify column data types across all 12 attribute
 ### Step 2: Missing Value Audit & Data Cleansing
 Missing values across `Director`, `Cast`, and `Country` are identified and imputed with `'Unknown'` to prevent null propagation during visual slicing. String columns undergo whitespace trimming and standardization.
 
-* **Figure 3 — Null Value Audit & Categorical Imputation (`isnull().sum()`)**  
+- **Figure 3 — Imputing Missing Values & Verifying Null Cleanliness (`fillna` & `isnull().sum()`)** 
   ![Figure 3 Missing Value Audit](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201219.png)
 
-* **Figure 4 — Genre Frequency & Distribution Breakdown**  
+- **Figure 4 — Initial Missing Value Audit Before Cleansing (`df.isnull().sum()`)**
   ![Figure 4 Genre Distribution](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201229.png)
 
 ---
