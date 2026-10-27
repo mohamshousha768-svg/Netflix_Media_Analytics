@@ -82,16 +82,16 @@ Missing values across `Director`, `Cast`, and `Country` are identified and imput
 ### Step 3: Data Preview & Sample Inspection
 Evaluating cleaned dataset rows to verify schema consistency, string formatting, and date transformations prior to exporting into Power BI.
 
-* **Figure 5 — Date Parsing & Schema Type Verification**  
+- **Figure 5 — Date Parsing & Schema Type Verification (`df.dtypes`)** 
   ![Figure 5 Date Parsing Verification](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201249.png)
 
-* **Figure 6 — Cleaned Data Head Preview (`df.head()`)**  
+- **Figure 6 — Descriptive Statistics & Type Distribution Analysis (`df.describe()`)**
   ![Figure 6 Cleaned Data Preview](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201258.png)
 
-* **Figure 7 — Multi-Value Category Count Analysis**  
+- **Figure 7 — Top Countries & Genres Frequency Analysis (`value_counts()`)**
   ![Figure 7 Category Count Analysis](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201304.png)
 
-* **Figure 8 — Primary Data Records Preview (`df.head(9)`)**  
+- **Figure 8 — Cleaned Data Records Preview (`df.head(9)`)** 
   ![Figure 8 Primary Data Preview](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201311.png)
 
 ---
