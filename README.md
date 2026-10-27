@@ -60,10 +60,10 @@ The pipeline begins in Python, inspecting raw dataset schemas, handling missing 
 ### Step 1: Schema Inspection & Data Type Validation
 We inspect raw dataset schemas, verify column data types across all 12 attributes, and evaluate datetime parsing structures.
 
-* **Figure 1 — Dataset Schema & Data Type Inspection (`df.dtypes`)**  
+* **Figure 1 — Dataset Ingestion & Sample Preview (`df.head()`)** 
   ![Figure 1 Schema Inspection](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201024.png)
 
-* **Figure 2 — Dataset Descriptive Statistics (`df.describe()`)**  
+* **Figure 2 — Dataset Schema & Info Inspection (`df.info()`)** 
   ![Figure 2 Descriptive Statistics](Netflix_Data_Analysis_Project/Screenshots/Screenshot%202026-10-21%20201159.png)
 
 ---
